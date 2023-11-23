@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-    
      <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4">
@@ -24,16 +23,20 @@
                                     <option value="multi">Multiplicacion</option>
                                     <option value="divi">Division</option>
                                  </select>
+                                 <span id="respuesta-1" class='invalid-feedback'></span>
+                                 <span id="respuesta-2" class='valid-feedback'></span>
                             </div>
                             <div class="form-group mt-3">
                                 <label for="">Numero 1</label>
-                                <input type="text" class="form-control">
+                                <input type="text" id="numero1" class="form-control">
+                                
                             </div>
                             <div class="form-group mt-3">
                                 <label for="">Numero 2</label>
-                                <input type="text" class="form-control">
+                                <input type="text" id="numero2" class="form-control">
+                                
                             </div>
-                            <button type="button" onclick="operacion()" class="btn btn-primary mt-3 w-100">Operar</button>
+                            <button type="button" onclick="operaciones()" class="btn btn-primary mt-3 w-100">Operar</button>
                          </form>
                     </div>
                   </div>
